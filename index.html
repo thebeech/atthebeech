@@ -117,7 +117,7 @@
                     <input type="text" name="Phone"><br>
                     <label>Message</label>
                     <textarea name="Message"></textarea>
-                    <input type="submit" value="Submit">
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -140,13 +140,19 @@
 
             var _ = $(this);
 
+            _.find('button').attr('disabled', 'disabled').html('Submitting <span class="fa fa-spinner fa-spin"></span>');
+
             $.ajax({
                 url: _.attr('action'),
                 method: "POST",
                 data: _.serialize(),
                 dataType: "json",
                 success: function(data){
-                    console.log(data);
+
+                    if(data.success==="email sent"){
+
+                        _[0].reset();
+                    }
                 }
             });
         });
