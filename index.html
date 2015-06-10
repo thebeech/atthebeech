@@ -144,7 +144,7 @@
             var _ = $(this);
 
             $.ajax({
-                url: _.attr('href'),
+                url: _.attr('action'),
                 method: "POST",
                 data: _.serialize(),
                 dataType: "json",
