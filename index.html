@@ -153,7 +153,15 @@
 
                         _[0].reset();
                         _.find('button').addClass('thanks').html('Thanks!');
+
+                    } else {
+
+                        _.find('button').addClass('oops').html('Please try again later');
                     }
+                },
+                error: function(){
+
+                    _.find('button').addClass('oops').html('Please try again later');
                 }
             });
         });

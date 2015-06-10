@@ -180,5 +180,9 @@ h1, h2, h3, h4, h5, h6 { font-weight:100; }
 }
 
 .montaz button.thanks { background:#8cd790; }
+.montaz button.oops { background:#c2454c; }
 
-.montaz button .fa { color:#fff; }
+.montaz button .fa {
+    color:#fff;
+    margin-left:4px;
+}
