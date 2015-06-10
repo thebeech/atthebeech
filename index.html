@@ -152,6 +152,7 @@
                     if(data.success==="email sent"){
 
                         _[0].reset();
+                        _.find('button')..addClass('thanks').html('Thanks!');
                     }
                 }
             });
