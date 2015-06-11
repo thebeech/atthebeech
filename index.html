@@ -24,42 +24,39 @@
             </nav>
         </div>
     </header>
-    <section class="bobby">
-       <div class="container">
-           <img src="assets/img/hero.jpg" alt="">
+    <section>
+        <div class="container">
+           <img class="hero" src="assets/img/hero.jpg" alt="">
         </div>
         <div class="container">
-            <h2 id="upcoming-events">Upcoming Events</h2>
-            <table>
-                <tr>
-                    <td>After-school program</td>
-                    <td>Jun 12, 2015</td>
-                    <td>3:00 - 4:00pm</td>
-                </tr>
-                <tr>
-                    <td>Closing Ceremony</td>
-                    <td>Jun 11, 2015</td>
-                    <td>6:00 - 8:00pm</td>
-                </tr>
-                <tr>
-                    <td>OST Program</td>
-                    <td>Jul 7, 2015</td>
-                    <td>10:00am - TBA</td>
-                </tr>
-                <tr>
-                    <td>The Beech Reunion</td>
-                    <td>Aug 15, 2015</td>
-                    <td>TBA</td>
-                </tr>
-            </table>
+            <section class="bobby">
+                <h2 id="upcoming-events">Upcoming Events</h2>
+                <table>
+                    <tr>
+                        <td>Closing Ceremony</td>
+                        <td>Jun 11, 2015</td>
+                        <td>6:00 - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>After-school program</td>
+                        <td>Jun 12, 2015</td>
+                        <td>3:00 - 4:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>OST Program</td>
+                        <td>Jul 7, 2015</td>
+                        <td>10:00am - TBA</td>
+                    </tr>
+                    <tr>
+                        <td>The Beech Reunion</td>
+                        <td>Aug 15, 2015</td>
+                        <td>TBA</td>
+                    </tr>
+                </table>
+            </section>
             <section class="justin">
-                <h2 class="photos">Photos</h2>
-                <a href="http://google.com" target="_blank"><img src="https://placehold.it/150x150"></a>
-                <a href="http://google.com" target="_blank"><img src="https://placehold.it/150x150"></a>
-                <a href="http://google.com" target="_blank"><img src="https://placehold.it/150x150"></a>
-                <a href="http://google.com" target="_blank"><img src="https://placehold.it/150x150"></a>
-                <a href="http://google.com" target="_blank"><img src="https://placehold.it/150x150"></a>
-                <a href="http://google.com" target="_blank"><img src="https://placehold.it/150x150"></a>
+                <h2 id="photos">Photos</h2>
+                <div id="flickrFeed"></div>
             </section>
         </div>
     </section>
@@ -123,6 +120,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/flickrFeed.js"></script>
     <script>
         $('nav a').click(function(e){
 
@@ -164,6 +162,15 @@
                     _.find('button').addClass('oops').html('Please try again later');
                 }
             });
+        });
+
+        jsFlickrBadge(document.getElementById('flickrFeed'), {
+            flickrId: '18587027@N04',// 133914708@N06
+            feed: 'user',
+            rows: 2,
+            columns: 4,
+            size: 94,
+            animation: 'none'
         });
     </script>
 </body>

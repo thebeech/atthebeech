@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5, h6 { font-weight:100; }
     width:1100px;
 }
 
+.hero { padding:40px 0; }
+
 /****************
  * Naph's section
  ****************/
@@ -51,6 +53,8 @@ h1, h2, h3, h4, h5, h6 { font-weight:100; }
 /*****************
  * Bobby's section
  *****************/
+.bobby { float:left; }
+
 .bobby table {
     background-color:#fff;
     border:1px #ccc solid;
@@ -59,23 +63,31 @@ h1, h2, h3, h4, h5, h6 { font-weight:100; }
 
 .bobby table td { padding:8px; }
 
-.bobby h2 { color:#ec8237; }
+.bobby h2 {
+    color:#ec8237;
+    margin-top:0;
+}
 
 .bobby tr:nth-child(odd){ background-color:#eee; }
 .bobby tr:nth-child(even){ background-color:#fff; }
 
-.bobby img { padding:25px 0; }
-
 /******************
  * Justin's section
  ******************/
-.justin h2 {
-    padding-bottom:80px;
+.justin {
+    float:left;
+    margin-bottom:40px;
+    margin-left:40px;
+    width:400px;
 }
 
-.justin .photo img {
-    padding:15px;
-    position:center;
+.justin h2 {
+    color:#ec8237;
+    margin-top:0;
+}
+
+.justin #flickrFeed a {
+    margin:4px;
 }
 
 /********************
