@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6 { font-weight:100; }
     float:left;
     margin-bottom:40px;
     margin-left:40px;
+    overflow:hidden;
     width:400px;
 }
 
